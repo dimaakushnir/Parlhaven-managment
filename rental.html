@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>Rental Application</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__body">
+                <div class="header__row">
+                    <a href="index.html" class="header__logo logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                    <nav class="header__menu menu" data-da="header__mob, 0, 767.98">
+                        <ul class="menu__list">
+                            <li class="menu__item active">
+                                <a href="index.html" class="menu__link">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">About us</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link active">Communities</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="careers.html" class="menu__link">Careers</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="" class="header__btn btn btn_blue">Contact us</a>
+                </div>
+                <a href="" class="header__burger">
+                    <span></span><span></span><span></span>
+                </a>
+            </div>
+        </div>
+        <div class="header__mob"></div>
+    </header>
+    <section class="rental">
+        <div class="rental__container container">
+            <div class="rental__body">
+                <form action="" class="rental__form form-rental">
+                    <div class="form-rental__row">
+                        <div class="form-rental__body">
+                            <div class="form-rental__content">
+                                <h2 class="form-rental__title title">Rental Application</h2>
+                                <h3 class="form-rental__subtitle title-item">Before you begin:</h3>
+                                <div class="form-rental__text text-item">
+                                    Please be prepared to pay the application fee as outlined in the property listing.
+                                    In
+                                    addition to this rental application, you will also be required to provide a copy of
+                                    a
+                                    valid form of identification and proof of income.
+                                </div>
+                                <div class="form-rental__text text-item">
+                                    To complete this rental application, you must be prepared to provide 3 years of
+                                    residential history as well as contact information for your rental references. You
+                                    will
+                                    also be asked to provide information on your monthly income, and please note that
+                                    most
+                                    properties require that applicant combined gross income is at least three (3) times
+                                    the
+                                    monthly rent amount.
+                                </div>
+                                <div class="form-rental__text text-item">
+                                    Each resident over the age of 18 must submit a separate rental application.
+                                </div>
+                                <div class="form-rental__fee">Application Fee: <span>$30.00</span></div>
+                            </div>
+                            <div class="form-rental__calendar-block calendar-block">
+                                <h3 class="calendar-block__title title-item title-item_green">You are applying to rent:
+                                </h3>
+                                <div class="calendar-block__address">100 Bridges Street - 29Sylvester, GA 31791</div>
+                                <div class="calendar-block__calendar calendar">
+                                    <input type="text" id="datepicker" placeholder="Move in 06/01/2023"
+                                        class="calendar__input">
+                                </div>
+                                <div class="calendar-block__options options-calendar-block">
+                                    <div class="options-calendar-block__item">
+                                        <input id="formTenant" checked autocomplete='off' type='radio' value="tenant"
+                                            name='living' class='options-calendar-block__input'>
+                                        <label for="formTenant" class="options-calendar-block__label">
+                                            <span>
+                                                I am applying as a <b>tenant.</b> (I will be living on the
+                                                property.)
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="options-calendar-block__item">
+                                        <input id="formGuarantor" autocomplete='off' type='radio' value="guarantor"
+                                            name='living' class='options-calendar-block__input'>
+                                        <label for="formGuarantor" class="options-calendar-block__label">
+                                            <span>
+                                                I am applying as a <b>guarantor/co-signer</b> for another applicant. (I
+                                                will not be living on the property.)
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-rental__your-contact-info your-contact-info"
+                            data-da="form-rental__body, 1, 599.98">
+                            <div class="your-contact-info__top">
+                                <div class="your-contact-info__title">Before you begin</div>
+                                <div class="your-contact-info__subtitle">Your contact info</div>
+                            </div>
+                            <div class="your-contact-info__items">
+                                <div class="your-contact-info__item">
+                                    <input autocomplete='off' type="text" name='form[]' placeholder="Where you've lived"
+                                        class='your-contact-info__input your-contact-info__input_1'>
+                                    <span class="your-contact-info__check">Where you've lived</span>
+                                </div>
+                                <div class="your-contact-info__item">
+                                    <input autocomplete='off' type="text" name='form[]'
+                                        placeholder="Co-Applicants/Occupants"
+                                        class='your-contact-info__input your-contact-info__input_2'>
+                                    <span class="your-contact-info__check">Co-Applicants/Occupants</span>
+                                </div>
+                                <div class="your-contact-info__item">
+                                    <input autocomplete='off' type="text" name='form[]'
+                                        placeholder="Personal information"
+                                        class='your-contact-info__input your-contact-info__input_3'>
+                                    <span class="your-contact-info__check">Personal information</span>
+                                </div>
+                                <div class="your-contact-info__item">
+                                    <input autocomplete='off' type="text" name='form[]' placeholder="Your income"
+                                        class='your-contact-info__input your-contact-info__input_4'>
+                                    <span class="your-contact-info__check">Your income</span>
+                                </div>
+                                <div class="your-contact-info__item">
+                                    <input autocomplete='off' type="text" name='form[]'
+                                        placeholder="Income Verification"
+                                        class='your-contact-info__input your-contact-info__input_5'>
+                                    <span class="your-contact-info__check">Income Verification</span>
+                                </div>
+                                <div class="your-contact-info__item">
+                                    <input autocomplete='off' type="text" name='form[]' placeholder="Questions"
+                                        class='your-contact-info__input your-contact-info__input_6'>
+                                    <span class="your-contact-info__check">Questions</span>
+                                </div>
+                                <div class="your-contact-info__item">
+                                    <input autocomplete='off' type="text" name='form[]' placeholder="Attach documents"
+                                        class='your-contact-info__input your-contact-info__input_7'>
+                                    <span class="your-contact-info__check">Attach documents</span>
+                                </div>
+                                <div class="your-contact-info__item">
+                                    <input autocomplete='off' type="text" name='form[]' placeholder="Pay fees"
+                                        class='your-contact-info__input your-contact-info__input_8'>
+                                    <span class="your-contact-info__check">Pay fees</span>
+                                </div>
+                                <div class="your-contact-info__item">
+                                    <input autocomplete='off' type="text" name='form[]' placeholder="Review and confirm"
+                                        class='your-contact-info__input your-contact-info__input_9'>
+                                    <span class="your-contact-info__check">Review and confirm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type='submit' class='form-rental__btn btn btn_blue'>Get started</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__body">
+            <div class="footer__row">
+                <a href="index.html" class="footer__logo logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <nav class="footer__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item active">
+                            <a href="index.html" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">About us</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="communities.html" class="menu__link">Communities</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="careers.html" class="menu__link">Careers</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__socials socials">
+                    <a href="" class="socials__item">
+                        <img src="img/socials/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="" class="socials__item">
+                        <img src="img/socials/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="" class="socials__item">
+                        <img src="img/socials/youtube.svg" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">Copyright © 2020 Parkhaven</div>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
